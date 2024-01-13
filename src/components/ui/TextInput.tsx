@@ -19,13 +19,19 @@ export const TextInput = ({ text,error, onChangeText, label, ...rest }: TextInpu
 			<label
 				htmlFor={name}
 				className={clsx("block mb-2 text-sm font-medium",labelClass)}
+				style={{
+					color: error ? 'red':  undefined
+				}}
 			>
-				{label} {labelClass}
+				{label}
 			</label>
 			<input
 				name={name}
 				type="email"
-				className={clsx("bg-[#18191E] outline-0 border placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5",borderClass)}
+				className={clsx("bg-[#18191E] outline-0 border placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5")}
+				style={{
+					borderColor: error ? 'red':  undefined
+				}}
 				value={text}
 				onChange={(e) => onChangeText(e.target.value)}
 				{...rest}
