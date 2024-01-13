@@ -8,6 +8,23 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Ezvibe',
   description: 'Ezvibe',
+  authors: [
+    {
+      name: 'Davide',
+      url: 'https://github.com/davidecarizzoni'
+    }
+  ],
+  icons: {
+    icon: [
+      {
+        url: '/favicon.png',
+        href: '/favicon.png',
+      },
+    ],
+  },
+  alternates:{
+    canonical: 'ezvibe.com'
+  }
 }
 
 export default function RootLayout({

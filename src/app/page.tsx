@@ -14,7 +14,7 @@ export default function Home() {
         <HeroSection />
         <AchievementsSection />
         <AboutSection />
-        <BeatsSection />
+        <BeatsSection /> 
         <EmailSection />
       </div>
       <Footer />

@@ -4,8 +4,10 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import {useWindowDimension} from "@/hooks/useWindowDimension";
 
 export const HeroSection = () => {
+	const { isXs } = useWindowDimension()
 	return (
 		<section className="lg:py-16">
 			<div className="grid grid-cols-1 sm:grid-cols-12">
@@ -42,7 +44,7 @@ export const HeroSection = () => {
 					</p>
 					<div>
 						<Link
-							href="/#contact"
+							href="/#beats"
 							className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
 						>
 							View beats
@@ -66,11 +68,11 @@ export const HeroSection = () => {
 				>
 					<div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
 						<Image
-							src="/images/hero-image.png"
+							src="/logo.png"
 							alt="hero image"
-							className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-							width={300}
-							height={300}
+							className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-[200px]"
+							width={isXs ? 250 : 400}
+							height={isXs ? 250 : 400}
 						/>
 					</div>
 				</motion.div>
