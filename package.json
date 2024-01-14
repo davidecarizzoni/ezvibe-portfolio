@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "preinstall": "sh nvm.sh",
+    "prepare": "sh nvm.sh",
+    "prestart": "sh nvm.sh",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

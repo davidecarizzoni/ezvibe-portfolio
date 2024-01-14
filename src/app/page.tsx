@@ -4,7 +4,6 @@ import {AchievementsSection} from "@/components/AchivementsSection";
 import {AboutSection} from "@/components/AboutSection";
 import {BeatsSection} from "@/components/BeatsSection";
 import {Footer} from "@/components/Footer";
-import {EmailSection} from "@/components/EmailSection";
 
 export default function Home() {
   return (
@@ -14,8 +13,7 @@ export default function Home() {
         <HeroSection />
         <AchievementsSection />
         <AboutSection />
-        <BeatsSection /> 
-        <EmailSection />
+        <BeatsSection />
       </div>
       <Footer />
     </main>

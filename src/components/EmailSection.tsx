@@ -1,7 +1,5 @@
 "use client";
 import React, {MouseEventHandler, useState} from "react";
-import Link from "next/link";
-import Image from "next/image";
 import {useFormik} from "formik";
 import {formFieldProps, formikProps} from "@/utils/formik";
 import {  object, string } from "yup";

@@ -14,10 +14,10 @@ const navLinks: NavLinkProps[] = [
 		title: "Beats",
 		href: "#beats",
 	},
-	{
-		title: "Contact",
-		href: "#contact",
-	},
+	// {
+	// 	title: "Contact",
+	// 	href: "#contact",
+	// },
 ];
 
 export const Navbar = () => {
