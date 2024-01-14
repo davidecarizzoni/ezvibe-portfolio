@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
+    "@vercel/speed-insights": "^1.0.3",
     "clsx": "^2.1.0",
     "formik": "^2.4.5",
     "framer-motion": "^10.18.0",
